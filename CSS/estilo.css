@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap');
+
+@keyframes movimento {
+    from {background-position: 0% 0%;}
+    to {background-position: 0% 90%;}
+}
+
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 25px;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+header {
+    background-color: transparent;
+    grid-area: header;
+    
+    background-image: url(../fundo/layered-waves-haikei\ \(1\).svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: movimento 6s infinite alternate ease;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    border-bottom: 1px solid white;
+    border-right:1px solid white;
+    padding: 10px;
+}
+
+header div {
+    display: flex;
+}
+
+header div h1 {
+    margin-left: 10px;
+}
+
+header .div_icon {
+    height: 57px;
+    width: 50px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s ease;
+}
+
+header .div_icon:hover {
+    color: #2f2f2f;
+    border: 1px solid #2f2f2f;
+}
+
+main {
+    background-color: transparent;;
+    grid-area: main;
+}
+
+aside {
+    background-color: transparent;
+    grid-area: aside;
+}
+
+footer {
+    background-color:#7298bf;
+    grid-area: footer;
+
+    color: white;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #ffff;
+}
+
+footer a:hover {
+    color: #2f2f2f;
+}
+
+a {
+    text-decoration: none;
+}
