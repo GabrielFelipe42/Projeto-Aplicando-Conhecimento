@@ -113,12 +113,10 @@ header {
 
 .pai-mobile-menu {
     display: none;
-    z-index: 1;
 }
 
 .mobile-menu {
     display: none;
-    z-index: 1;
 }
 
 .open {
@@ -127,10 +125,6 @@ header {
 
 .close{
     display: none;
-}
-
-main div {
-    z-index: 0;
 }
 
 @media screen and (width < 775px) {
